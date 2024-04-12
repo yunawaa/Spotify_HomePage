@@ -1,36 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scripts/bootstrap.bundle.min.js">
+    <link rel="shortcut icon" href="/logo/Spotify_logo_without_text.svg">
+    <title>Spotify Home Page</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="shortcut icon" href="/icons/spotify.svg">
-    <title>Spotify Home Page</title>
+
 </head>
-<body>
+<body class="w-100">
+  <section id="menulateral">
+
+    
+  <!-- OFFCANVAS MENU LATERAL -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <main>
     <header>
-        <!-- navigation bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#">FEATURED</a>
-                  <a class="nav-link" href="#">GENRES & MOODS</a>
-                  <a class="nav-link" href="#">NEW RELEASES</a>
-                  <a class="nav-link" href="#">DISCOVER</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+      <!-- As a link -->
+    <nav class="navbar">
+      <div class="container-fluid">
+            <!-- BOTÃO MENU LATERAL -->
+           <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                 <img id="logo" src="/logo/Spotify_logo_without_text.svg" alt="logo">
+           </button>
+
+
+      </div>
+</nav>
     </header>
 
-    <footer></footer>
-    
+    <section id="musicas">
+      <!-- linha de músicas -->
+      <div class="linhademusica d-flex align-items-center gap-4 flex-md-column flex-lg-row container">
+        <!-- musica 1 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        <!-- musica 2 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        <!-- musica 3 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        <!-- musica 4 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        <!-- musica 5 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        <!-- musica 6 -->
+        <div class="card" style="width: 200px;">
+          <img src="/images/capas de músicas/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Billie Eilish</p>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+    </section>
+
+  </main>
+    <script src="/scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
